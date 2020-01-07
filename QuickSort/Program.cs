@@ -1,7 +1,7 @@
 ﻿using System;
 using BenchmarkDotNet.Running;
 
-namespace SelectionSort
+namespace QuickSort
 {
     class Program
     {
@@ -10,15 +10,10 @@ namespace SelectionSort
             int[] numbers = { 55, 20, 74, 46, 71, 63 };
 
             Console.WriteLine("unsorted: " + String.Join(",", numbers));
-            SelectionSort.Sort(numbers);
+            QuickSort.Sort(numbers, 0, numbers.Length-1);
+
             Console.WriteLine("sorted: " + String.Join(",", numbers));
             Console.WriteLine("*********************************************************");
-
-            numbers = new int[] { 55, 20, 74, 46, 71, 63 };
-
-            Console.WriteLine("unsorted: " + String.Join(",", numbers));
-            GenericSelectionSort<int>.Sort(numbers);
-            Console.WriteLine("sorted: " + String.Join(",", numbers));
 
 #if RELEASE
             BenchmarkRunner.Run<SortBenchmark>();
