@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
+using CommonHelpers;
 
 namespace SelectionSort
 {
@@ -8,13 +9,17 @@ namespace SelectionSort
         [Benchmark]
         public void SortArray()
         {
-            SelectionSort.Sort(new int[] { 55, 20, 74, 46, 71, 63 });
+            var numbers = HelperFunctions.GenerateIntegers(100);
+
+            SelectionSort.Sort(numbers);
         }
 
         [Benchmark]
         public void GenericSortArray()
         {
-            GenericSelectionSort<int>.Sort(new int[] { 55, 20, 74, 46, 71, 63 });
+            var numbers = HelperFunctions.GenerateIntegers(100);
+
+            GenericSelectionSort<int>.Sort(numbers);
         }
     }
 }
