@@ -18,5 +18,18 @@ namespace CommonHelpers
 
             return intArr;
         }
+
+        public static int[] GenerateIntegersOrdered(int amount)
+        {
+            int[] intArr = new int[amount];
+
+            for (int i = 0; i < intArr.Length; i++)
+            {
+                int num = i+1;
+                intArr[i] = num;
+            }
+
+            return intArr;
+        }
     }
 }

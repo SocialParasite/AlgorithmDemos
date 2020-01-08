@@ -42,5 +42,38 @@
 
             return lowIdx + 1;
         }
+
+        public static void Sort2(int[] array, int min, int max)
+        {
+            int minIdx = min;
+            int maxIdx = max;
+
+            int pivot = array[(min + max) / 2];
+
+            do
+            {
+                while ((array[minIdx] < pivot) && (minIdx < max))
+                    minIdx++;
+
+                while ((pivot < array[maxIdx]) && (maxIdx > min))
+                    maxIdx--;
+
+                if (minIdx <= maxIdx)
+                {
+                    int temp = array[minIdx];
+                    array[minIdx] = array[maxIdx];
+                    array[maxIdx] = temp;
+                    minIdx++;
+                    maxIdx--;
+                }
+            }
+            while (minIdx <= maxIdx);
+
+            if (min < maxIdx)
+                Sort2(array, min, maxIdx);
+
+            if (minIdx < max)
+                Sort2(array, minIdx, max);
+        }
     }
 }
