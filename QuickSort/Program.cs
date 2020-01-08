@@ -1,5 +1,6 @@
 ﻿using System;
 using BenchmarkDotNet.Running;
+using CommonHelpers;
 
 namespace QuickSort
 {
@@ -7,10 +8,12 @@ namespace QuickSort
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 55, 20, 74, 46, 71, 63 };
+            var numbers = HelperFunctions.GenerateIntegers(100);
 
             Console.WriteLine("unsorted: " + String.Join(",", numbers));
             QuickSort.Sort(numbers, 0, numbers.Length-1);
+
+            Console.WriteLine();
 
             Console.WriteLine("sorted: " + String.Join(",", numbers));
             Console.WriteLine("*********************************************************");

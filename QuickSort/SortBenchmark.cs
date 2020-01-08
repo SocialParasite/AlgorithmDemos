@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
+using CommonHelpers;
 
 namespace QuickSort
 {
@@ -8,7 +9,7 @@ namespace QuickSort
         [Benchmark]
         public void SortArray()
         {
-            int[] numbers = { 55, 20, 74, 46, 71, 63 };
+            var numbers = HelperFunctions.GenerateIntegers(100);
 
             QuickSort.Sort(numbers, 0, numbers.Length-1);
         }
