@@ -4,7 +4,7 @@ using CommonHelpers;
 namespace SelectionSort
 {
     [MemoryDiagnoser]
-    public class SortBenchmark
+    public class SelectionSortBenchmark
     {
         [Benchmark]
         public void SortArray()

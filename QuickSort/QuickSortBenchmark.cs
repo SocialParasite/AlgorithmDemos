@@ -4,7 +4,7 @@ using CommonHelpers;
 namespace QuickSort
 {
     [MemoryDiagnoser]
-    public class SortBenchmark
+    public class QuickSortBenchmark
     {
         [Benchmark]
         public void SortArray()

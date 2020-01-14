@@ -22,7 +22,7 @@ namespace SelectionSort
             Console.WriteLine("sorted: " + String.Join(",", numbers));
 
 #if RELEASE
-            BenchmarkRunner.Run<SortBenchmark>();
+            BenchmarkRunner.Run<SelectionSortBenchmark>();
 #endif
         }
     }

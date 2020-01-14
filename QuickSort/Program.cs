@@ -21,7 +21,7 @@ namespace QuickSort
             Console.WriteLine("*********************************************************");
 
 #if RELEASE
-            BenchmarkRunner.Run<SortBenchmark>();
+            BenchmarkRunner.Run<QuickSortBenchmark>();
 #endif
         }
     }

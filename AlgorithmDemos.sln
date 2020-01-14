@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{0D00F18A-4BAA-45E3-9B03-43510C7F9B84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{89E5E2D6-0FE6-437F-A072-282D2AE10990}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSort", "QuickSort\QuickSort.csproj", "{89E5E2D6-0FE6-437F-A072-282D2AE10990}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonHelpers", "CommonHelpers\CommonHelpers.csproj", "{8B28CCB8-DCFB-4274-89CE-1E33725F8A8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonHelpers", "CommonHelpers\CommonHelpers.csproj", "{8B28CCB8-DCFB-4274-89CE-1E33725F8A8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\MergeSort.csproj", "{490BD5AE-94D1-45C2-AB7C-C58DF5A77639}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8B28CCB8-DCFB-4274-89CE-1E33725F8A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B28CCB8-DCFB-4274-89CE-1E33725F8A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B28CCB8-DCFB-4274-89CE-1E33725F8A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{490BD5AE-94D1-45C2-AB7C-C58DF5A77639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{490BD5AE-94D1-45C2-AB7C-C58DF5A77639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{490BD5AE-94D1-45C2-AB7C-C58DF5A77639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{490BD5AE-94D1-45C2-AB7C-C58DF5A77639}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
