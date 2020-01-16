@@ -7,7 +7,7 @@ namespace QuickSort
     public class QuickSortBenchmark
     {
         [Benchmark]
-        public void SortArray()
+        public void Sort_LastItemAsPivot_RandomizedArray()
         {
             var numbers = HelperFunctions.GenerateIntegers(100);
 
@@ -15,7 +15,7 @@ namespace QuickSort
         }
 
         [Benchmark]
-        public void SortArray2()
+        public void Sort_PivotInTheMiddle_RandomizedArray()
         {
             var numbers = HelperFunctions.GenerateIntegers(100);
 
@@ -23,7 +23,7 @@ namespace QuickSort
         }
 
         [Benchmark]
-        public void SortArrayWithOrderedArray()
+        public void Sort_LastItemAsPivot_OrderedArray()
         {
             var numbers = HelperFunctions.GenerateIntegersOrdered(100);
 
@@ -31,7 +31,7 @@ namespace QuickSort
         }
 
         [Benchmark]
-        public void SortArray2WithOrderedArray()
+        public void Sort_PivotInTheMiddle_OrderedArray()
         {
             var numbers = HelperFunctions.GenerateIntegersOrdered(100);
 
