@@ -3,12 +3,12 @@
 ## Overview
 
 
-| Algorithm        | Best-case           | Avg-case    | Worst-case   | 
-| ---------------- |:-------------------:|:-----------:|:------------:|
-| Merge Sort       | O(n log n)          | O(n log n)  | O(n log n)   |
-| Quick Sort       | O(n log n)          | O(n log n)  | O(n&#x00B2;) |
-| Selection Sort   | O(n&#x00B2;)        | O(n&#x00B2;)| O(n&#x00B2;) |
-| Insertion Sort   | O(n)                | O(n&#x00B2;)| O(n&#x00B2;) |
+| Algorithm        | Best-case           | Avg-case    | Worst-case   | Space |
+| ---------------- |:-------------------:|:-----------:|:------------:|:------|
+| Merge Sort       | O(n log n)          | O(n log n)  | O(n log n)   | O(n)  |
+| Quick Sort       | O(n log n)          | O(n log n)  | O(n&#x00B2;) | O(n)  |
+| Selection Sort   | O(n&#x00B2;)        | O(n&#x00B2;)| O(n&#x00B2;) | O(1)  |
+| Insertion Sort   | O(n)                | O(n&#x00B2;)| O(n&#x00B2;) | O(n)  |
 
 ## Merge Sort
 

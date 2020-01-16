@@ -4,7 +4,7 @@
     {
         public static int[] Sort(int[] array)
         {
-            for (int i = 1; i < array.Length; ++i)
+            for (int i = 1; i < array.Length; i++)
             {
                 int currentValue = array[i];
                 int pointer = i - 1;
