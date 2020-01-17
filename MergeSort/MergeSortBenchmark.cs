@@ -4,6 +4,7 @@ using CommonHelpers;
 
 namespace MergeSort
 {
+    [MemoryDiagnoser]
     public class MergeSortBenchmark
     {
         [Benchmark]

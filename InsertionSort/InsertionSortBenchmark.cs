@@ -3,6 +3,7 @@ using CommonHelpers;
 
 namespace InsertionSort
 {
+    [MemoryDiagnoser]
     public class InsertionSortBenchmark
     {
         [Benchmark]

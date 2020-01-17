@@ -1,6 +1,6 @@
 ﻿namespace SelectionSort
 {
-    public class SelectionSort
+    public static class SelectionSort
     {
         public static void Sort(int[] array)
         {

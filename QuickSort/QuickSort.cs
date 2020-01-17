@@ -1,6 +1,6 @@
 ﻿namespace QuickSort
 {
-    public class QuickSort
+    public static class QuickSort
     {
         public static void Sort(int[] array, int min, int max)
         {
