@@ -9,6 +9,7 @@
 | Quick Sort       | O(n log n)          | O(n log n)  | O(n&#x00B2;) | O(n)  |
 | Selection Sort   | O(n&#x00B2;)        | O(n&#x00B2;)| O(n&#x00B2;) | O(1)  |
 | Insertion Sort   | O(n)                | O(n&#x00B2;)| O(n&#x00B2;) | O(n)  |
+| Bubble Sort      | O(n)                | O(n&#x00B2;)| O(n&#x00B2;) | O(1)  |
 
 ## Merge Sort
 
@@ -38,3 +39,10 @@
 |------------ |-----------:|----------:|----------:|----------:|
 |        Sort | 6,208.6 ns | 123.49 ns | 177.11 ns |     704 B |
 | SortOrdered |   222.7 ns |   4.46 ns |   9.31 ns |     424 B |
+
+## Bubble Sort
+
+|      Method |        Mean |    Error |   StdDev | Allocated |
+|------------ |------------:|---------:|---------:|----------:|
+|        Sort | 23,550.0 ns | 79.66 ns | 70.62 ns |     704 B |
+| SortOrdered |    180.4 ns |  2.35 ns |  2.20 ns |     424 B |
